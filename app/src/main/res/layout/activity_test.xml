@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/header_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="20dp"
+            android:text="Question 1:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#000000" />
+
+
+        <TextView
+            android:id="@+id/q_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="30dp"
+            android:text="Is your name Karen?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/email_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="30dp"
+            android:text="The manager's email address: frodefavian@gmail.com"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:visibility="gone"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/yes_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#E91E63"
+            android:onClick="YesOnClick"
+            android:text="Yes"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/no_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#673AB7"
+            android:onClick="NoOnClick"
+            android:padding="10dp"
+            android:text="No" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="100dp"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-7591418323160599/6534089386" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
